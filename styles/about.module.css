@@ -1,0 +1,137 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 72vh;
+  width: 90vw;
+  margin: 1em auto 0;
+  font-size: 1.5rem;
+  color: #d1d7e0;
+  padding: 0.5em;
+  overflow: hidden;
+} 
+
+.container h2 {
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  animation: slide-text 0.5s ease-in;
+  animation-fill-mode: backwards;
+}
+
+.container p:first-of-type {
+  animation: slide-text 0.5s ease-in 0.25s;
+  animation-fill-mode: backwards;
+  font-weight: lighter;
+  letter-spacing: 0.02em;
+}
+
+.container P:first-of-type span {
+  color: #802bb1;
+}
+
+.container p:last-of-type {
+  animation: slide-text 0.5s ease-in 0.5s;
+  animation-fill-mode: backwards;
+  font-weight: lighter;
+  letter-spacing: 0.02em;
+}
+
+.container .tech_table {
+  display: flex;
+  flex-grow: 1;
+  margin-bottom: 1.5em;
+  line-height: 1.5em;
+  animation: slide-text 0.5s linear 0.75s;
+  animation-fill-mode: backwards;
+  font-weight: lighter;
+  letter-spacing: 0.02em;
+}
+
+.container .tech_table .right_column {
+  margin-right: 0.8em;
+}
+
+.container .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5em;
+  box-shadow: 0 0 0.15em 0.1em #802bb1;
+  padding: 1em;
+  border-radius: 0.3em;
+  animation: slide-text 0.5s linear 0.75s;
+  animation-fill-mode: backwards;
+  background-color: #802bb110;
+}
+
+.container .image {
+  border-radius: 0.2em;
+}
+
+.icons {
+  height: 0.8em;
+  width: 0.8em;
+  vertical-align: 0em;
+  color: #802bb1;
+}
+
+.container .home_page {
+  animation: slide-text 0.5s linear 0.9s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes slide-text {
+  0% {
+    transform: translate(-50em, -50em);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-gap: 0.5em;
+    background-color: transparent;
+    box-shadow: none;
+    width: 80vw;
+    font-size: 0.9rem;
+  }
+
+  .container h2 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .container p:first-of-type {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 0;
+  }
+
+  .container p:last-of-type {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin: 0;
+  }
+
+  .container .tech_table {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+
+  .container .img {
+    grid-column: 2/3;
+    grid-row: 2/5;
+    justify-self: center;
+  }
+
+  .container .home_page {
+    grid-column: 1/3;
+    grid-row: 5/6;
+  }
+}
