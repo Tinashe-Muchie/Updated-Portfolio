@@ -23,14 +23,16 @@ export const BlogCard = ({
       <a>
         <main>
           <Image src={"url"} width={250} height={250} />
-          <span>{title}</span>
-          <section>
-            <div>
-              <span>{Author}</span>
-              <span>{Author}</span>
-            </div>
-            <span>{dateAndTime}</span>
-          </section>
+          <div>
+            <span>{title}</span>
+            <section>
+              <div>
+                <span>{Author}</span>
+                <span>{Author}</span>
+              </div>
+              <span>{dateAndTime}</span>
+            </section>
+          </div>
         </main>
       </a>
     </Link>
