@@ -45,7 +45,6 @@ main {
   font-size: 1.5rem;
   color: var(--grey-cascade);
   padding: 0.5em;
-  text-shadow: 0.06em 0 var(--grey-cascade);
 }
 
 /*styling for the logo image*/

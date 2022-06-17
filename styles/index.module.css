@@ -71,7 +71,7 @@
   box-shadow: 0 0.1em 0 var(--grey-cascade);
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .first_of_span {
     font-size: 1.1rem;
     font-weight: lighter;

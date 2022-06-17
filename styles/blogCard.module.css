@@ -1,4 +1,42 @@
-main {
+.blogLink {
+    display: block;
+    border-radius: .3em;
+    box-shadow: 0 0 .3em #802bb1;
+}
+
+.main {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: .9rem;
+    margin-bottom: .5em;
+    border: hidden;
+    
+    
+    max-height: min-content;
 }
+
+.main .image {
+    width: 5em;
+    height: 10em;
+}
+
+.main .content {
+    display: flex;
+    flex-direction: column;
+    padding: .5em;
+}
+
+.main .content section {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        width: 16em;
+    }
+}
+

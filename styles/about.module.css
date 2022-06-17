@@ -27,7 +27,7 @@
 
 .container P:first-of-type span {
   color: #802bb1;
-}
+} 
 
 .container p:last-of-type {
   animation: slide-text 0.5s ease-in 0.5s;
