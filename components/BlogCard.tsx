@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import styles from "../styles/blogCard.module.css";
 
 type Props = {
   id: number;
@@ -7,7 +8,7 @@ type Props = {
   title: string;
   dateAndTime: string;
   coverPhoto: string;
-  Author: string;
+  author: string;
 };
 
 export const BlogCard = ({
@@ -16,24 +17,26 @@ export const BlogCard = ({
   title,
   dateAndTime,
   coverPhoto,
-  Author
+  author
 }: Props) => {
   return (
     <Link href="/blog">
-      <a>
-        <main>
-          <Image src={"url"} width={250} height={250} />
-          <div>
+      <a className={styles.blogLink}>
+        <div className={styles.main}>
+          <div className={styles.image}>
+            <Image src={"/images/logo.png"} width={250} height={250} />
+          </div>
+          <div className={styles.content}>
             <span>{title}</span>
             <section>
               <div>
-                <span>{Author}</span>
-                <span>{Author}</span>
+                <span>{author}</span>
+                <span>{author}</span>
               </div>
               <span>{dateAndTime}</span>
             </section>
           </div>
-        </main>
+        </div>
       </a>
     </Link>
   );
