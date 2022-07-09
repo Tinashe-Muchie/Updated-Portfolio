@@ -19,7 +19,7 @@ export const PROJECT_DETAIL = (
                 <div>
                     {title}
                 </div>
-                <a href={link} target="_blank">
+                <a href={link} target="_blank" rel="noreferrer">
                     Live Site Link 
                 </a>
             </div>

@@ -30,7 +30,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
     </Head>
     <div className="container">
       <header className="main-header">
-        <Image src="/images/logo.png" width={150} height={150} />
+        <Image src="/images/logo.png" width={150} height={150} alt="" />
       </header>
       <nav>
         <ul className="main-nav">

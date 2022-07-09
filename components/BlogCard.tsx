@@ -24,7 +24,7 @@ export const BlogCard = ({
       <a className={styles.blogLink}>
         <div className={styles.main}>
           <div className={styles.image}>
-            <Image src={"/images/logo.png"} width={250} height={250} />
+            <Image src={"/images/logo.png"} width={250} height={250} alt="" />
           </div>
           <div className={styles.content}>
             <span>{title}</span>
