@@ -3,11 +3,12 @@ import Image from "next/image";
 import Layout from "../components/Layout";
 import styles from "../styles/about.module.css";
 import { FaArrowCircleRight } from "react-icons/fa";
-
+import { IconType } from "react-icons";
+import { ReactNode } from "react";
+  
 const AboutPage = () => (
   <Layout title="About">
     <main className={styles.container}>
-      <h2> About Me </h2>
       <p>
         {" "}
         Hi! My interest in programming piqued when i had to do a modeling module
@@ -45,7 +46,7 @@ const AboutPage = () => (
               {" "}
               <FaArrowCircleRight className={styles.icons} />{" "}
             </span>
-            <span> Node </span>
+            <span> Next </span>
           </div>
         </div>
         <div className={styles.left_column}>
@@ -68,13 +69,13 @@ const AboutPage = () => (
               {" "}
               <FaArrowCircleRight className={styles.icons} />{" "}
             </span>
-            <span> MongoDB </span>
+            <span> Node </span>
           </div>
         </div>
       </section>
       <div className={styles.img}>
         <Image
-          src="/Webp.net-resizeimage.png"
+          src="/images/about_photo.jpg"
           width={170}
           height={200}
           className={styles.image}

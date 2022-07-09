@@ -2,6 +2,7 @@ import Layout from "../components/Layout";
 import Link from "next/link";
 import styles from "../styles/contact.module.css";
 import { FaLinkedinIn, FaTwitter, FaGithub } from "react-icons/fa";
+import { PROJECT_IMAGE } from "../components/ProjectImage";
 
 const submitContactForm = async (e: React.FormEvent) => {
   e.preventDefault();
@@ -10,7 +11,6 @@ const submitContactForm = async (e: React.FormEvent) => {
 const ContactPage = () => (
   <Layout title="contact-page">
     <main className={styles.container}>
-      <h2> Contact Me </h2>
       <form
         className={styles.contact_form}
         id="contact_form"
