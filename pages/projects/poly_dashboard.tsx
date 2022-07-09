@@ -24,20 +24,18 @@ const POLY_DASHBOARD = () => {
             />
             <div className={styles.product_detail}>
                 <span>
-                Evanna Homeware is an online store for a local company that offers interior decor services, sells 
-                furniture and decor accessories. I chose to build this SPA inorder to understand how to integrate GraphCMS
-                with Stripe. It was an exciting opportunity for me to cement my knowledge of react hooks, React Router, 
-                TypeScript and Apollo GraphQL.
+                Poly Dashboard is a dashboard that shows a particular hospitals' covid statistics per each and every 
+                month of the year. I chose to develop this site because i wanted to learn how to do dashboard. When i 
+                thought about it seemed like it was a complicated project to build so i decided to do it so that i could 
+                strengthen my knowledge of CSS grid layouts.  
                 </span>
                 <span>
-                While i was developing the site i had trouble with image optimization, the images were slowing the site speed.
-                Through the use of google i ended up figuring how to optimize images in order to speed up the site load time.
-                One thing that i'm still struggling with is file organisation and if i were to improve anything on this project, 
-                it would be the way i organised files. 
+                The project helped to understand how to integrate google charts in a project. I also used react calendar,
+                and i understood how to make one from scratch. Overally the project proved to be a good learning resource 
+                as it helped me refresh my CSS and how to organize 
                 </span>
                 <span>
-                I also learnt how to use wireframes in order to improve my productivity. Previously i used to jump into a 
-                project and this usually resulted in me getting stuck at some point during development.
+                
                 </span>
                 <div>
                     <button 
