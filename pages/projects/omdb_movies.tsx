@@ -24,20 +24,20 @@ const OMDB_MOVIES = () => {
             />
             <div className={styles.product_detail}>
                 <span>
-                Evanna Homeware is an online store for a local company that offers interior decor services, sells 
-                furniture and decor accessories. I chose to build this SPA inorder to understand how to integrate GraphCMS
-                with Stripe. It was an exciting opportunity for me to cement my knowledge of react hooks, React Router, 
-                TypeScript and Apollo GraphQL.
+                OMDB movies is a storage site for movies. The idea behind developing it was to help someone who 
+                might want to search and store movie details for later use. I chose to build this SPA inorder to 
+                learn how to wrap a Rest API in a graphQl api. The project helped me understand how to use GraphQl 
+                on the backend as well as on the front end by utilizing Apollo Client. It helped me properly understand how to use CSS grid and 
+                flex-box.
                 </span>
                 <span>
-                While i was developing the site i had trouble with image optimization, the images were slowing the site speed.
-                Through the use of google i ended up figuring how to optimize images in order to speed up the site load time.
-                One thing that i'm still struggling with is file organisation and if i were to improve anything on this project, 
-                it would be the way i organised files. 
+                While i was developing the site i had trouble with pagination since it was my first time dealing 
+                with a project that required its use. I also struggled a bit with using grid and flex-box together.
+                I researched and through trial and error i finally figured how to do pagination seamlessly and i can confidently
+                say that i know most of what is required to develop a grid layout. 
                 </span>
                 <span>
-                I also learnt how to use wireframes in order to improve my productivity. Previously i used to jump into a 
-                project and this usually resulted in me getting stuck at some point during development.
+                
                 </span>
                 <div>
                     <button 
