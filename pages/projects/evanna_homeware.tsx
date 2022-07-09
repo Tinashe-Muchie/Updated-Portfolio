@@ -32,7 +32,7 @@ const EVANNA_HOMEWARE = () => {
                 <span>
                 While i was developing the site i had trouble with image optimization, the images were slowing the site speed.
                 Through the use of google i ended up figuring how to optimize images in order to speed up the site load time.
-                One thing that i'm still struggling with is file organisation and if i were to improve anything on this project, 
+                One thing that i am still struggling with is file organisation and if i were to improve anything on this project, 
                 it would be the way i organised files. 
                 </span>
                 <span>
