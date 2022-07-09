@@ -24,7 +24,7 @@ const POLY_DASHBOARD = () => {
             />
             <div className={styles.product_detail}>
                 <span>
-                Poly Dashboard is a dashboard that shows a particular hospitals' covid statistics per each and every 
+                Poly Dashboard is a dashboard that shows a particular hospitals covid statistics per each and every 
                 month of the year. I chose to develop this site because i wanted to learn how to do dashboard. When i 
                 thought about it seemed like it was a complicated project to build so i decided to do it so that i could 
                 strengthen my knowledge of CSS grid layouts.  
