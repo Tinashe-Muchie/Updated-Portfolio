@@ -1,4 +1,5 @@
 import styles from "../styles/projectImage.module.css";
+import Image from 'next/image';
 
 interface PROJECT_IMAGE_IF {
     laptop_image: string;
@@ -12,16 +13,16 @@ export const PROJECT_IMAGE = ({laptop_image, tablet_image, smartphone_image}: PR
             <div className={styles.container}>
   
             <div className={styles.laptop}>
-                <img className={styles.browser} src={laptop_image} alt=""/>
+                <Image className={styles.browser} src={laptop_image} alt="" layout="fill"/>
                 <div className={styles.keyboard}></div>
             </div>
             
             <div className={styles.tablet}>
-                <img className={styles.browser} src={tablet_image} alt="" />
+                <Image className={styles.browser} src={tablet_image} alt="" layout="fill"/>
             </div>
             
             <div className={styles.phone}>
-                <img className={styles.browser} src={smartphone_image} alt="" />
+                <Image className={styles.browser} src={smartphone_image} alt="" layout="fill"/>
             </div>
             
             </div> 

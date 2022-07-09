@@ -35,8 +35,8 @@ const PROJECTS_INFO: Array<PROJECT_INFO_IF> = [
     {
         id: 'omdb_movies',
         laptop_image: '/images/omdb_laptop.png',
-        tablet_image: 'image',
-        smartphone_image: 'image',
+        tablet_image: '/image',
+        smartphone_image: '/image',
         title: 'OMDB Movies',
         description: 'OMDB Movies is an SPA that allows users to search, discover and save movies they want to watch later.',
         technologies: 'Typescript, React, OMDB movie API, Styled Components, GraphQl, Apollo Client, Apollo Server'
