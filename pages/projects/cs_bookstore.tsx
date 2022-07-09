@@ -24,20 +24,21 @@ const CS_BOOKSTORE = () => {
             />
             <div className={styles.product_detail}>
                 <span>
-                Evanna Homeware is an online store for a local company that offers interior decor services, sells 
-                furniture and decor accessories. I chose to build this SPA inorder to understand how to integrate GraphCMS
-                with Stripe. It was an exciting opportunity for me to cement my knowledge of react hooks, React Router, 
-                TypeScript and Apollo GraphQL.
+                CS Bookstore is an online store for a local company that sells books. I chose to build this as 
+                a single-page application because I wanted to really get to grips with how react.js works. 
+                This project was an opportunity for me to learn how to make a UI/UX for a shopping cart and 
+                understand the integration of the Stripe payment method on an e-commerce website.
                 </span>
                 <span>
-                While i was developing the site i had trouble with image optimization, the images were slowing the site speed.
-                Through the use of google i ended up figuring how to optimize images in order to speed up the site load time.
-                One thing that i'm still struggling with is file organisation and if i were to improve anything on this project, 
-                it would be the way i organised files. 
+                While i was developing the site it took me a while to understand how the Stripe payment API, commerce.js sdk
+                worked. Through the use of google i ended up figuring how to do it. I used the stripe documents as well as other
+                developers blog sites that explained how to do it. After it was said and done i gained a great deal of knowledge
+                on how to navigate through the pages, how to pass state via the react router. In as much i think i made progress 
+                with this project i still think i can improve the load time of the application as well as refactoring of the code. 
                 </span>
                 <span>
-                I also learnt how to use wireframes in order to improve my productivity. Previously i used to jump into a 
-                project and this usually resulted in me getting stuck at some point during development.
+                One other thing that i could have done to improve my developer experience with this project is to plan the whole 
+                project in advance. It could have helped me save so much time.
                 </span>
                 <div>
                     <button 
