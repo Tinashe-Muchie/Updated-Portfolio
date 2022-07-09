@@ -3,13 +3,13 @@
 :root {
   box-sizing: border-box;
   font-size: calc(1vw + 0.5em);
-  --background-black: rgba(0, 0, 0);
+  --background-black: #B1B1B1;
   /*--background-black: #0b0c10;*/
   --background-white: #fff;
   --grey-lynch: rgba(108, 122, 137);
   --grey-cascade: rgba(149, 165, 166);
   --grey-edward: rgba(171, 183, 183);
-  --text-purple: #802bb1;
+  --text-purple: #0A0708;
   --text-white: #d1d7e0;
 }
 
@@ -52,7 +52,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  filter: drop-shadow(0 0 0.5em var(--text-purple));
+  filter: drop-shadow(0 0 0.3em var(--text-purple));
 }
 
 .container .main-nav {
@@ -62,7 +62,6 @@ main {
   font-size: 1.3rem;
   padding: 0.5em;
   margin: 0.5em 0;
-  border-bottom: 0.1em solid var(--grey-cascade);
 }
 
 .container .main-nav li:nth-child(2) a:link,
@@ -122,7 +121,7 @@ footer {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  border-top: 0.01em solid var(--grey-cascade);
+  
 }
 
 footer > div {

@@ -1,0 +1,35 @@
+.container {
+    padding: .5em;
+
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.title div:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.title a {
+    font-size: .9rem;
+    font-weight: lighter;
+    text-decoration: none;
+    color: #444444;
+    text-transform: lowercase;
+}
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        margin: auto;
+    }
+}

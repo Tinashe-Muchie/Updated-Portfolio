@@ -9,10 +9,11 @@
 .first_of_span {
   animation: appear 3s linear 1;
   animation-fill-mode: backwards;
+  color: #444444;
 }
 
 .wrapper h2 {
-  color: #802bb1;
+  color: #0A0708;
   font-size: 3rem;
   animation: appear 3s linear 1 0.5s;
   animation-fill-mode: backwards;
@@ -21,6 +22,7 @@
 .last_of_span {
   animation: appear 3s linear 1 1s;
   animation-fill-mode: backwards;
+  color: #444444;
 }
 
 @keyframes appear {
@@ -56,19 +58,19 @@
   text-decoration: none;
   padding: 0.3em 1.5em;
   font-size: 1.5rem;
-  color: #802bb1;
+  color: #0A0708;
   border-radius: 0.2em;
   text-transform: lowercase;
   font-weight: lighter;
   background-color: transparent;
   margin-top: 1.5em;
-  box-shadow: 0em 0em 0.2em #802bb1;
+  box-shadow: 0em 0em 0.2em #0A0708;
   transition: box-shadow 1s, color 1s;
 }
 
 .blog_cv_links li a:hover {
-  color: var(--grey-cascade);
-  box-shadow: 0 0.1em 0 var(--grey-cascade);
+  color: #444444;
+  box-shadow: 0 0.1em 0 #444444;
 }
 
 @media screen and (min-width: 768px) {
@@ -80,7 +82,7 @@
 
   .last_of_span {
     font-size: 1.1rem;
-    font-weight: bold;
+    font-weight: lighter;
     letter-spacing: 0.03em;
   }
 
