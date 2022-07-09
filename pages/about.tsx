@@ -79,6 +79,7 @@ const AboutPage = () => (
           width={170}
           height={200}
           className={styles.image}
+          alt=""
         />
       </div>
       <span className={styles.home_page}>
