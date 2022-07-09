@@ -1,21 +1,77 @@
 import Layout from "../components/Layout";
 import Link from "next/link";
 import styles from "../styles/blog.module.css";
-import { useQuery, ApolloError } from "@apollo/client";
-import { BLOGS } from "../queries/blogsQuerie";
-import { MyQueryQuery } from "../src/generated/graphql";
+import { gql} from "@apollo/client";
+import client from "../apolloClient";
+import { BlogCard } from "../components/BlogCard";
 
 interface blogpageIF {
   blogs: blogs_type;
-  loading: boolean;
-  error: ApolloError;
 }
 
-const BlogPage = ({blogs, loading, error }: blogpageIF) => (
-  <Layout title="blog-page">
+const BlogPage = ({blogs}: blogpageIF) => {
+  console.log(blogs);
+  return (
+    <Layout title="blog-page">
     <main className={styles.container}>
-      <h2> Blog Page </h2>
-      <p>This is the blog page</p>
+      <section className={styles.blog_section}>
+        <BlogCard 
+          id={1}
+          slug={"read"}
+          title={"why svelte is the future"}
+          dateAndTime={"09-12-2009"}
+          coverPhoto={"cover photo"}
+          author={"Tinashe Muchineripi"}
+        />
+        <BlogCard 
+          id={1}
+          slug={"read"}
+          title={"why svelte is the future"}
+          dateAndTime={"09-12-2009"}
+          coverPhoto={"cover photo"}
+          author={"Tinashe Muchineripi"}
+        />
+        <BlogCard 
+          id={1}
+          slug={"read"}
+          title={"why svelte is the future"}
+          dateAndTime={"09-12-2009"}
+          coverPhoto={"cover photo"}
+          author={"Tinashe Muchineripi"}
+        />
+        <BlogCard 
+          id={1}
+          slug={"read"}
+          title={"why svelte is the future"}
+          dateAndTime={"09-12-2009"}
+          coverPhoto={"cover photo"}
+          author={"Tinashe Muchineripi"}
+        />
+        <BlogCard 
+          id={1}
+          slug={"read"}
+          title={"why svelte is the future"}
+          dateAndTime={"09-12-2009"}
+          coverPhoto={"cover photo"}
+          author={"Tinashe Muchineripi"}
+        />
+        <BlogCard 
+          id={1}
+          slug={"read"}
+          title={"why svelte is the future"}
+          dateAndTime={"09-12-2009"}
+          coverPhoto={"cover photo"}
+          author={"Tinashe Muchineripi"}
+        />
+        <BlogCard 
+          id={1}
+          slug={"read"}
+          title={"why svelte is the future"}
+          dateAndTime={"09-12-2009"}
+          coverPhoto={"cover photo"}
+          author={"Tinashe Muchineripi"}
+        />
+      </section>
       <span>
         <Link href="/">
           <a>Go to Homepage</a>
@@ -23,18 +79,45 @@ const BlogPage = ({blogs, loading, error }: blogpageIF) => (
       </span>
     </main>
   </Layout>
-);
+  ) 
+}
+
 
 export default BlogPage;
 
 export async function getServerSideProps() {
-  const { loading, error, data } = await useQuery<MyQueryQuery>(BLOGS);
+  const { data } = await client.query({
+    query: gql`
+    query MyQuery {
+        blogs {
+        id
+        slug
+        title
+        dateAndTime
+        coverPhoto {
+            url
+        }
+        content {
+            html
+        }
+        author {
+            id
+            name
+            avatar {
+            id
+            url
+            }
+            blogs {
+            title
+            }
+        }
+        }
+    }
+`});
 
   return {
     props: {
       blogs: data?.blogs,
-      loading,
-      error
     },
   };
 }
