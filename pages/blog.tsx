@@ -11,66 +11,12 @@ interface blogpageIF {
 
 const BlogPage = ({blogs}: blogpageIF) => {
   console.log(blogs);
+
   return (
     <Layout title="blog-page">
     <main className={styles.container}>
       <section className={styles.blog_section}>
-        <BlogCard 
-          id={1}
-          slug={"read"}
-          title={"why svelte is the future"}
-          dateAndTime={"09-12-2009"}
-          coverPhoto={"cover photo"}
-          author={"Tinashe Muchineripi"}
-        />
-        <BlogCard 
-          id={1}
-          slug={"read"}
-          title={"why svelte is the future"}
-          dateAndTime={"09-12-2009"}
-          coverPhoto={"cover photo"}
-          author={"Tinashe Muchineripi"}
-        />
-        <BlogCard 
-          id={1}
-          slug={"read"}
-          title={"why svelte is the future"}
-          dateAndTime={"09-12-2009"}
-          coverPhoto={"cover photo"}
-          author={"Tinashe Muchineripi"}
-        />
-        <BlogCard 
-          id={1}
-          slug={"read"}
-          title={"why svelte is the future"}
-          dateAndTime={"09-12-2009"}
-          coverPhoto={"cover photo"}
-          author={"Tinashe Muchineripi"}
-        />
-        <BlogCard 
-          id={1}
-          slug={"read"}
-          title={"why svelte is the future"}
-          dateAndTime={"09-12-2009"}
-          coverPhoto={"cover photo"}
-          author={"Tinashe Muchineripi"}
-        />
-        <BlogCard 
-          id={1}
-          slug={"read"}
-          title={"why svelte is the future"}
-          dateAndTime={"09-12-2009"}
-          coverPhoto={"cover photo"}
-          author={"Tinashe Muchineripi"}
-        />
-        <BlogCard 
-          id={1}
-          slug={"read"}
-          title={"why svelte is the future"}
-          dateAndTime={"09-12-2009"}
-          coverPhoto={"cover photo"}
-          author={"Tinashe Muchineripi"}
-        />
+        
       </section>
       <span>
         <Link href="/">
