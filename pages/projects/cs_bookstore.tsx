@@ -7,7 +7,8 @@ const project_detail = {
     laptop_image: '/images/cs-books.laptop.png',
     tablet_image: '/images/cs-books.tablet.png',
     smartphone_image: '/images/cs-books.mobile.png',
-    link: 'https://cs-books.netlify.app/#/'
+    site_link: 'https://cs-books.netlify.app/#/',
+    github_link: 'https://github.com/Tinashe-Muchie/Bookstore'
 }
 
 const CS_BOOKSTORE = () => {
@@ -20,7 +21,8 @@ const CS_BOOKSTORE = () => {
                 laptop_image={project_detail.laptop_image}
                 tablet_image={project_detail.tablet_image}
                 smartphone_image={project_detail.smartphone_image}
-                link={project_detail.link}
+                site_link={project_detail.site_link}
+                github_link={project_detail.github_link}
             />
             <div className={styles.product_detail}>
                 <span>

@@ -7,7 +7,8 @@ const project_detail = {
     laptop_image: '/images/poli_dashboard_laptop.png',
     tablet_image: '/images/poli_dashboard_tablet.png',
     smartphone_image: '/images/poli_dashboard_mobile.png',
-    link: 'https://poly-dashboard.netlify.app'
+    site_link: 'https://poly-dashboard.netlify.app',
+    github_link:'https://github.com/Tinashe-Muchie/dashboard'
 }
 
 const POLY_DASHBOARD = () => {
@@ -20,7 +21,8 @@ const POLY_DASHBOARD = () => {
                 laptop_image={project_detail.laptop_image}
                 tablet_image={project_detail.tablet_image}
                 smartphone_image={project_detail.smartphone_image}
-                link={project_detail.link}
+                site_link={project_detail.site_link}
+                github_link={project_detail.github_link}
             />
             <div className={styles.product_detail}>
                 <span>

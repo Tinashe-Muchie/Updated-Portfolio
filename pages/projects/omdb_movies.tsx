@@ -7,7 +7,8 @@ const project_detail = {
     laptop_image: '/images/omdb_laptop.png',
     tablet_image: 'image',
     smartphone_image: 'image',
-    link: 'https://omdb-movie-watchlis-t.netlify.app/#/'
+    site_link: 'https://omdb-movie-watchlis-t.netlify.app/#/',
+    github_link:'https://github.com/Tinashe-Muchie/Movie-WatchList'
 }
 
 const OMDB_MOVIES = () => {
@@ -20,7 +21,8 @@ const OMDB_MOVIES = () => {
                 laptop_image={project_detail.laptop_image}
                 tablet_image={project_detail.tablet_image}
                 smartphone_image={project_detail.smartphone_image}
-                link={project_detail.link}
+                site_link={project_detail.site_link}
+                github_link={project_detail.github_link}
             />
             <div className={styles.product_detail}>
                 <span>
