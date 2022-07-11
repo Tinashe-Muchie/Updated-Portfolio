@@ -7,11 +7,12 @@ interface Project_Detail {
     laptop_image: string;
     tablet_image: string;
     smartphone_image: string;
-    link: string;
+    site_link: string;
+    github_link: string;
 }
 
 export const PROJECT_DETAIL = (
-    {title, laptop_image, tablet_image, smartphone_image, link}: Project_Detail
+    {title, laptop_image, tablet_image, smartphone_image, site_link, github_link}: Project_Detail
     ) => {
     return (
         <div className={styles.container}>
@@ -19,9 +20,14 @@ export const PROJECT_DETAIL = (
                 <div>
                     {title}
                 </div>
-                <a href={link} target="_blank" rel="noreferrer">
+                <div>
+                <a href={site_link} target="_blank" rel="noreferrer">
                     Live Site Link 
                 </a>
+                <a href={github_link} target="_blank" rel="noreferrer">
+                    Github Link 
+                </a>
+                </div>
             </div>
             <div className={styles.project_image}>
             <PROJECT_IMAGE 
