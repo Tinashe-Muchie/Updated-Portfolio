@@ -8,7 +8,7 @@ const project_detail = {
     tablet_image: 'image',
     smartphone_image: 'image',
     site_link: 'https://omdb-movie-watchlis-t.netlify.app/#/',
-    github_link:'https://github.com/Tinashe-Muchie/Movie-WatchList'
+    github_link:'https://github.com/Tinashe-Muchie/movie_watchlist_fe'
 }
 
 const OMDB_MOVIES = () => {
